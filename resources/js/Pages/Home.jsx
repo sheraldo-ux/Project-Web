@@ -4,5 +4,4 @@ export default function Home() {
             <h1 className="title">Hello user</h1>
         </>
     );
-}       
-    
+}
