@@ -36,9 +36,16 @@ export default function Home() {
     };
   }, [currentPage]);
 
+  const currentTheme = localStorage.getItem('currentTheme')
+  const [ theme, setTheme ] = useState(currentTheme ? currentTheme : 'light')
+
+  useEffect(()=>{
+    localStorage.setItem('currentTheme', theme)
+  },[theme])
+
   return (
-    <div className="App">
-      <Header scrollToInfo={scrollToInfo} />
+    <div className={`container ${theme}`}>
+      <Header scrollToInfo={scrollToInfo} theme={theme} setTheme={setTheme} />
       <div className={`page ${currentPage === 0 ? 'show-home' : 'show-info'}`}>
         <div ref={mainRef} className="section home-section">
           <Main />

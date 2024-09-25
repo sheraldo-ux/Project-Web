@@ -16,39 +16,6 @@ html, body {
   position: relative;
 }
 
-.header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 1rem;
-  z-index: 1000;
-}
-
-.header nav {
-  margin-top: 10px;
-}
-
-.header nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.header nav ul li {
-  cursor: pointer;
-  color: #fff;
-  padding: 5px 10px;
-  transition: background-color 0.3s;
-}
-
-.header nav ul li:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
 .page {
   height: 200vh; /* 2 sections: home + info */
   display: flex;
@@ -57,7 +24,7 @@ html, body {
 }
 
 .section {
-  height: 100vh;
+  height: 90vh;
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -65,11 +32,22 @@ html, body {
 }
 
 .home-section {
-  background-color: lightblue;
+  background-color: black;
+}
+
+.dark .home-section {
+  background-color: white;
 }
 
 .info-section {
-  background-color: lightgreen;
+  background-color: black;
+  padding-top: 100px;
+  z-index: -1;
+}
+
+.dark .info-section {
+  background-color: white;
+  padding-top: 100px;
 }
 
 /* Transitions between sections */
