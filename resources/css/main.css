@@ -1,0 +1,9 @@
+#map {
+    height: 600px;
+    width: 70%;
+    border-radius: 10px;
+    border: 10px solid white;
+}
+.dark #map {
+border: 10px solid black;
+}

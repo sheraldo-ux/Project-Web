@@ -1,7 +1,7 @@
-import React, { useState, useEffect, useRef } from 'react';
 import Header from '@/components/header';
-import Main from '@/components/main';
 import Info from '@/components/information';
+import Main from '@/components/main';
+import React, { useEffect, useRef, useState } from 'react';
 import '../../css/scroll.css';
 
 export default function Home() {
